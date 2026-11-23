@@ -1,0 +1,30 @@
+import.java.util.Arrays;
+import.java.util.Scanner;
+{
+  public class MEthode
+  {
+    public static void main (String [] args)
+    {
+      Scanner sc = new Scanner(System.in);
+      int[] arr = {9,-5,7,9,-5,5,7};
+      int newarr = methode(arr);
+      for (int i=0; i<newarr.length; i++)
+      {
+        System.out.print(newarr[i]+" ");
+      }
+    }
+    public static int methode(int[] array)
+    {
+      for (int i=0; i<array.length-1; i++)
+      {
+        for (int j=i+1; j<array.length; j++)
+        {
+          if (array[i]==array[j])
+          {
+            array[j] = 0;
+          }
+        }
+      }
+    }
+  }
+}

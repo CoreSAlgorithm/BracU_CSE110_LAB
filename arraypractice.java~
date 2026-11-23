@@ -1,0 +1,15 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class arraypractice
+{
+  public static void main( String [] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    int arr[] = {34,2454,45365,763,76,89};
+    System.out.println(arr.length);
+    System.out.println(Arrays.toString(arr));
+    System.out.println(arr[3]);
+    arr[3] = 267;
+    System.out.println(Arrays.toString(arr));
+  }
+}

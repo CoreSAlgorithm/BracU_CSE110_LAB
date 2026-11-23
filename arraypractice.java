@@ -1,0 +1,53 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class arraypractice
+{
+  public static void main( String [] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    int[] arr = {9,-5,7,9,-5,5,7};
+    System.out.println("Before removing duplicates:");
+    for (int i=0; i<arr.length; i++)
+    {
+      System.out.print(arr[i]+" ");
+    }
+    System.out.println("\nAfter removing duplicates:");
+    for (int i=0; i<arr.length-1; i++)
+    {
+      for (int j=i+1; j<arr.length; j++)
+      {
+        if (arr[i]==arr[j])
+        {
+          arr[j] = 0;
+        }
+      }
+    }
+    for (int i=0; i<arr.length; i++)
+    {
+      System.out.print(arr[i]+" ");
+    }
+    System.out.println("\nAfter all removing duplicates:");
+    int count = 0;
+    for (int i=0; i<arr.length; i++)
+    {
+     if (arr[i]==0)
+      {
+        count++;
+      }
+    }
+    int[] newarr = new int[arr.length-count];
+    int idx = 0;
+    for (int i=0; i<arr.length; i++)
+    {
+      if (arr[i] != 0)
+      {
+        newarr[idx] = arr[i];
+        idx++;
+      }
+    }
+    for (int i=0; i<newarr.length; i++)
+    {
+      System.out.print(newarr[i]+" ");
+    }
+  }
+}

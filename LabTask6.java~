@@ -1,0 +1,58 @@
+//Question-1
+//import java.util.Scanner;
+//public class LabTask6
+//{
+//  public static void main (String [] args)
+//  {
+//    Scanner sc = new Scanner (System.in);
+//    String s1 = "9Abe-Coal-69UK-420i";
+//    String m = "";
+//    for (int i=0; i<s1.length(); i++)
+//    {
+//      int n = 0;
+//      char ch = s1.charAt(i);
+//      if (ch == 'A' || ch== 'E' || ch== 'I' || ch== 'O' || ch== 'U')
+//      {
+//        n += ((int) ch)+32;
+//        m += (char) n;
+//      }
+//      else if (ch == 'a' || ch== 'e' || ch== 'i' || ch== 'o' || ch== 'u')
+//      {
+//        n += ((int) ch)-32;
+//        m += (char) n;
+//      }
+//      else
+//      {
+//        m += ch;
+//      }
+//    }
+//    System.out.println("Redeemable Code:" + m);
+//  }
+//}
+
+//Question-2
+
+import java.util.Scanner;
+public class LabTask6
+{
+  public static void main (String [] args)
+  {
+    Scanner sc = new Scanner (System.in);
+    System.out.print("String1:");
+    String s1 = sc.nextLine();
+    System.out.print("String2:");
+    String s2 = sc.nextLine();
+    String s3 = "";
+    if (s1.length()>s2.length())
+    {
+      for (int i=0; i<s2.length(); i++)
+      {
+        if(s2.charAt(i)==s1.charAt(i));
+        {
+          s3 = s2.charAt(i);
+        }
+        else{}
+      }
+    }
+  }
+}

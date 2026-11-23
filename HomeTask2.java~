@@ -1,0 +1,73 @@
+//Question-1
+
+//import java.util.Scanner;
+//public class HomeTask2
+//{
+//  public static void main (String [] args)
+//  {
+//    Scanner sc = new Scanner (System.in);
+//    System.out.println("Enter the number:");
+//    int num = sc.nextInt();
+//    if ((num%5==0)&&(num%7==0))
+//      System.out.println("Invalid: Divisible by both");
+//    else if (num%5==0)
+//      System.out.println("Divisible by 5");
+//    else if (num%7==0)
+//      System.out.println("Divisible by 7");
+//    else 
+//      System.out.println("No");
+//  }
+//}
+
+//Question-2
+
+//import java.util.Scanner;
+//public class HomeTask2
+//{
+//  public static void main (String [] args)
+//  {
+//    Scanner sc = new Scanner (System.in);
+//    System.out.println("Enter age:");
+//    int age = sc.nextInt();
+//    System.out.println("Enter the Electricity Consumed:");
+//    double Electricity_Consumed = sc.nextDouble();
+//    if ((age<18)&&(100>=Electricity_Consumed))
+//      System.out.println("Final Bill: "+(((Electricity_Consumed*15)-((Electricity_Consumed*15)*20/100)))+" Taka");
+//    else if ((age<18)&&(100<Electricity_Consumed))
+//      System.out.println("Final Bill: "+((((Electricity_Consumed*15)-((Electricity_Consumed*15)*20/100)))+((((Electricity_Consumed*15)-((Electricity_Consumed*15)*20/100)))*5/100))+" Taka");
+//    else if (((18<=age)&&(age<=60))&&(100>=Electricity_Consumed))
+//       System.out.println("Final Bill: "+(Electricity_Consumed*15)+" Taka");
+//    else if (((18<=age)&&(age<=60))&&(100<Electricity_Consumed))
+//      System.out.println("Final Bill: "+((Electricity_Consumed*15)+((Electricity_Consumed*15)*5/100))+" Taka");
+//    else if ((age>60)&&(100>=Electricity_Consumed))
+//       System.out.println("Final Bill: "+((Electricity_Consumed*15)-((Electricity_Consumed*15)*10/100))+" Taka");
+//    else if ((age>60)&&(100<Electricity_Consumed))
+//      System.out.println("Final Bill: "+(((Electricity_Consumed*15)-((Electricity_Consumed*15)*10/100))+(((Electricity_Consumed*15)-((Electricity_Consumed*15)*10/100))*5/100))+" Taka");
+//  }
+//}
+
+//Question-3
+
+import java.util.Scanner;
+public class HomeTask2
+{
+  public static void main (String [] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    double a = sc.nextDouble();
+    double b = sc.nextDouble();
+    double c = sc.nextDouble();
+    if ((a > b) && (a > c))
+    {
+      System.out.println(" Maximum number is "+a);
+    }
+    else if ((b > c)&&(b > a))
+    {
+      System.out.println(" Maximum number is "+b);
+    }
+    else if ((c > a) && (c > b))
+    {
+      System.out.println(" Maximum number is "+c);
+    }
+  }
+}

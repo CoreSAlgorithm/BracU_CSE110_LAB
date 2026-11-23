@@ -1,0 +1,22 @@
+impoort java.util.Scanner;
+public class practice
+{
+  public static void main ( String [] args )
+  {
+    Scanner sc = new Scanner ( System.in );
+    System.out.prinln("Enter the number:");
+    int num = sc.nextInt();
+    if ( num < 90 )
+    {
+      System.out.prinln(num+ "is bigger than 90.");
+    }
+    else if ( num > 90 )
+    {
+      System.out.prinln(num+ "is smaller than 90.");
+    }
+    else ( num = 90 )
+    {
+      System.out.prinln(num+ "is equal to 90.");
+    }
+  }
+}

@@ -1,0 +1,61 @@
+public class Samplefinal {
+    public static void main(String[] args) {
+
+        String expr = "100x-13y-7x+22x-13y+113y";
+        int xSum = 0;
+        int ySum = 0;
+
+        int i = 0;
+        int sign = 1;
+
+        while (i < expr.length()) {
+
+            // sign check
+            if (expr.charAt(i) == '+') {
+                sign = 1;
+                i++;
+            } else if (expr.charAt(i) == '-') {
+                sign = -1;
+                i++;
+            }
+
+            // coefficient
+            int coeff = 0;
+            boolean hasDigit = false;
+
+            while (i < expr.length() && expr.charAt(i) >= '0' && expr.charAt(i) <= '9') {
+                coeff = coeff * 10 + (expr.charAt(i) - '0');
+                i++;
+                hasDigit = true;
+            }
+
+            if (!hasDigit) {
+                coeff = 1; // x or y only
+            }
+
+            coeff = coeff * sign;
+
+            // variable
+            char var = expr.charAt(i);
+            i++;
+
+            if (var == 'x') {
+                xSum += coeff;
+            } else if (var == 'y') {
+                ySum += coeff;
+            }
+        }
+
+        // output
+        if (xSum != 0) {
+            System.out.print(xSum + "x");
+        }
+
+        if (ySum != 0) {
+            if (ySum > 0 && xSum != 0) {
+                System.out.print("+");
+            }
+            System.out.print(ySum + "y");
+        }
+    }
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class number1
+{
+  public static void main (String [] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    double a = sc.nextDouble();
+    double b = sc.nextDouble();
+    double c = sc.nextDouble();
+    if (a > b)
+    {
+      System.out.println(" Maximum number is a");
+    }
+    else if (c > a)
+    {
+      System.out.println(" Maximum number is c");
+    }
+    else if(c > b)
+    {
+      System.out.println(" Maximum number is c");
+    }
+    else
+    {
+      System.out.println(" No");
+    }
+  }
+}

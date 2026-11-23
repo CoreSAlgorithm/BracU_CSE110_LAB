@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class xm
+{
+  public static void main (String [] args)
+  {
+    Scanner sc = new Scanner;
+    System.out.print ("Start: ");
+    int start = sc.nextInt();
+    System.out.print ("End: ");
+    int end = sc.nextInt();
+    int digit = 0;
+    if (end<3)
+    {
+      System.out.print ("Too far off ");
+    }
+    else 
+    {
+      for (int i=start;i<=end;i++)
+      {
+        System.out.print (i+" ");
+        digit++;
+      }
+      if ((start-end)%digit)
+      {
+        System.out.print ("Congratulation");
+      }
+      else
+      {
+        System.out.print ("Close");
+      }
+    }
+  }
+}

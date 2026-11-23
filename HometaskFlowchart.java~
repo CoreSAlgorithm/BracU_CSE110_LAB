@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class HometaskFlowchart
+{
+  public static void main (String [] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number:");
+    int num = sc.nextInt();
+    System.out.printf("The last two digit is "+num%10000=%.2f);
+  } 
+}
